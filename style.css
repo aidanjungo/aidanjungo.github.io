@@ -380,6 +380,7 @@ p>a:hover {
 
 .publi-link {
     margin-bottom: 10px;
+    word-break: break-all;
 }
 
 /* Contact */
@@ -389,7 +390,6 @@ p>a:hover {
     margin-left: 30px;
     margin-bottom: 50px;
 }
-
 
 
 /* Screen smaller than 800px */
@@ -485,6 +485,4 @@ p>a:hover {
     .project-illustration img {
         width: 80%;
     }
-
-
 }
