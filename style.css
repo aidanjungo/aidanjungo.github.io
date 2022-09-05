@@ -1,0 +1,490 @@
+/*
+style.css
+----------
+CSS
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "Lato", sans-serif;
+}
+
+
+/* General */
+
+p {
+    font-size: 16px;
+    font-weight: 400;
+    color: #404040;
+}
+
+h2 {
+    font-size: 28px;
+    font-weight: 500;
+    background: #404040;
+    color: #b1b1b1;
+    margin-top: 25px;
+    padding: 12px;
+}
+
+h3 {
+    font-size: 20px;
+    font-weight: 400;
+    background-color: #b1b1b1;
+    color: #404040;
+    border-radius: 3px;
+    padding-left: 10px;
+    line-height: 30px;
+    margin-top: 20px;
+    margin-left: 12px;
+    margin-right: 12px;
+    margin-bottom: 20px;
+}
+
+p>a {
+    color: #101010;
+    text-decoration: none;
+    transition: 0.3s ease;
+}
+
+p>a:hover {
+    color: #202020;
+    text-decoration: underline;
+    transition: 0.3s ease;
+}
+
+.main {
+    max-width: 1200px;
+    margin-left: 240px;
+    font-size: 28px;
+    padding: 0px 10px;
+}
+
+
+/* Intro */
+
+.container-intro {
+    display: flex;
+    align-items: center;
+}
+
+.name-title {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 40px;
+    color: #404040;
+}
+
+.intro-text {
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+
+.intro-image {
+    display: block;
+    max-width: 100%;
+    margin: 20px;
+    margin-right: 30px;
+    border-radius: 10%;
+}
+
+
+/* Side nav */
+
+.logo_AJ {
+    align-items: center;
+    max-width: 100%;
+}
+
+.sidenav {
+    height: 100%;
+    width: 230px;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #202020;
+    overflow-x: hidden;
+    padding-top: 20px;
+}
+
+.menu_name {
+    text-decoration: none;
+    font-size: 25px;
+    line-height: 35px;
+    color: #818181;
+    display: block;
+}
+
+.menu_name:hover {
+    color: #f1f1f1;
+    font-size: 26px;
+    transition: .5s ease;
+}
+
+
+/* Social media button */
+
+#sm_links {
+    position: absolute;
+    bottom: 50px;
+    width: 230px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: .5s ease;
+}
+
+.ext-sm-link {
+    text-align: center;
+}
+
+.fa,
+.ai {
+    font-size: 25px;
+    transition: .5s ease;
+}
+
+.fa:hover,
+.ai:hover {
+    opacity: 1;
+    transition: .5s ease;
+}
+
+.fa-linkedin:hover {
+    background: #007bb5;
+    color: white;
+}
+
+.fa-github:hover {
+    background: #000000;
+    color: white;
+}
+
+.ai-google-scholar:hover {
+    background: #4285F4;
+    color: white;
+}
+
+.ai-orcid:hover {
+    background: #A6CE39;
+    color: white;
+}
+
+.fa-twitter:hover {
+    background: #55ACEE;
+    color: white;
+}
+
+
+/* Footer */
+.footer {
+    color: #818181;
+    font-size: 6px;
+    margin-left: 10px;
+}
+
+
+/* Grid container for school and jobs */
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 25% 85%;
+    margin-top: 25px;
+    margin-bottom: 50px;
+    margin-left: 10px;
+}
+
+.logo-school-div {
+    grid-column: 1;
+    grid-row: 1 / span 2;
+}
+
+.logo-school {
+    max-height: 90%;
+    width: 90%;
+    transition: 0.5s ease;
+}
+
+.logo-school:hover {
+    max-height: 93%;
+    width: 93%;
+}
+
+.school-text {
+    grid-column: 2;
+    grid-row: 2 / span 3;
+    margin-right: 15%;
+}
+
+.school-name {
+    grid-column: 2;
+    grid-row: 1;
+    font-size: 22px;
+    margin-right: 15%;
+    margin-bottom: 15px;
+}
+
+.school-diploma {
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.school-year {
+    font-size: 16px;
+    font-style: italic;
+    margin-bottom: 15px;
+    margin-left: 15px;
+    padding-top: 20px;
+}
+
+.school-description {
+    margin-bottom: 12px;
+}
+
+
+.projects {
+    font-size: 14px;
+}
+
+.project-tasks {
+    font-size: 12px;
+    margin-top: 3px;
+    margin-left: 32px;
+}
+
+
+/* Skills */
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    row-gap: 10px;
+    column-gap: 20px;
+    flex-direction: row;
+    margin-left: 20px;
+}
+
+.skills-container>img {
+    max-height: 80px;
+    margin-bottom: 20px;
+}
+
+
+/* The flip box container for skills */
+.flip-box {
+    background-color: transparent;
+    width: 80px;
+    height: 80px;
+    perspective: 1000px;
+}
+
+.flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+}
+
+.flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-box-front>img {
+    width: 80px;
+}
+
+.flip-box-front,
+.flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    -webkit-backface-visibility: hidden;
+    /* Safari */
+    backface-visibility: hidden;
+}
+
+.flip-box-back {
+    background-color: #ffffff;
+    transform: rotateY(180deg);
+}
+
+.flip-box-back p {
+    color: #404040;
+    font-weight: 500;
+    line-height: 80px;
+}
+
+
+/* Projects */
+
+.project-description {
+    margin-left: 25px;
+}
+
+.project-illustration {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    text-align: center;
+
+}
+
+.project-illustration img {
+    width: 50%;
+    border-radius: 6%;
+    transition: 0.7s ease;
+}
+
+.project-illustration img:hover {
+    border-radius: 6%;
+    box-shadow: 0 0 3px 3px #888888;
+    transition: 0.7s ease;
+}
+
+
+/* Publications */
+
+.publi-core {
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.publi-journal {
+    margin-bottom: 10px;
+}
+
+.publi-authors {
+    margin-bottom: 10px;
+}
+
+.publi-abstract {
+    margin-bottom: 10px;
+}
+
+.publi-link {
+    margin-bottom: 10px;
+}
+
+/* Contact */
+
+.contact-info p {
+    margin-top: 20px;
+    margin-left: 30px;
+    margin-bottom: 50px;
+}
+
+
+
+/* Screen smaller than 800px */
+
+@media screen and (max-width: 800px) {
+    .main {
+        margin-left: 90px;
+    }
+
+    .sidenav {
+        width: 80px;
+        transition: 0.1s ease;
+    }
+
+    .logo_AJ {
+        margin-bottom: 20px;
+    }
+
+    .menu_name {
+        max-width: 24px;
+        margin-left: 10px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
+    }
+
+    .footer {
+        max-width: 80px;
+        overflow: auto;
+    }
+}
+
+
+@media screen and (max-width: 800px) {
+    .grid-container {
+        display: block;
+    }
+
+    .container-intro {
+        flex-wrap: wrap;
+    }
+
+    .intro-image {
+        display: block;
+        margin-top: 0px;
+        margin-bottom: 20px;
+        margin-left: 10%;
+        margin-right: 10%;
+        width: 80%;
+        border-radius: 50%;
+    }
+}
+
+@media screen and (max-width: 800px) {
+
+    .logo-school {
+        height: 70%;
+        width: 70%;
+        margin-left: 15%;
+        margin-right: 15%;
+        transition: 0.0s ease;
+    }
+
+    .logo-school:hover {
+        height: 70%;
+        width: 70%;
+    }
+
+    .school-year {
+        font-size: 16px;
+        font-style: italic;
+        margin-bottom: 15px;
+        margin-left: 0px;
+        padding-top: 0px;
+    }
+
+    .school-name {
+        font-size: 18px;
+        margin-right: 4%;
+        margin-bottom: 15px;
+    }
+
+    .school-text {
+        text-align: left;
+        margin-right: 4%;
+    }
+
+    .projects {
+        font-size: 14px;
+        text-align: left;
+    }
+
+    .project-illustration img {
+        width: 80%;
+    }
+
+
+}
