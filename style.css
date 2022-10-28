@@ -380,7 +380,9 @@ label>h3:hover {
 #publi3,
 #publi3-detail,
 #publi4,
-#publi4-detail {
+#publi4-detail,
+#publi5,
+#publi5-detail {
     display: none;
 }
 
@@ -388,7 +390,8 @@ label>h3:hover {
 #publi1:checked~#publi1-detail,
 #publi2:checked~#publi2-detail,
 #publi3:checked~#publi3-detail,
-#publi4:checked~#publi4-detail {
+#publi4:checked~#publi4-detail,
+#publi5:checked~#publi5-detail {
     display: block;
 }
 
