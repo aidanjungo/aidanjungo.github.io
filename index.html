@@ -16,7 +16,7 @@
         <img src="logos/logo_AJ.svg" alt="logo_AJ" class="logo_AJ">
         <br>
         <a href="#home" class="menu_name"><i class="fa fa-home"></i> Home</a>
-        <a href="#projects-section" class="menu_name"><i class="fa fa-folder-open"></i> Project</a>
+        <a href="#project-section" class="menu_name"><i class="fa fa-folder-open"></i> Project</a>
         <a href="#publications" class="menu_name"><i class="fa fa-newspaper-o"></i> Publications</a>
         <a href="#contact" class="menu_name"><i class="fa fa-envelope"></i> Contact</a>
 
@@ -110,7 +110,7 @@
                     &nbsp;01/2015 - 08/2015
                 </p>
                 <div class="school-name">
-                    Ecole Polytechnique federal de Lausanne, WIRE Laboratry
+                    Ecole Polytechnique federal de Lausanne, WIRE Laboratory
                 </div>
 
                 <div class="school-text">
@@ -243,10 +243,10 @@
                     <p class="school-description">Tournesol aims to identify top videos of public utility by eliciting
                         contributors' judgments on content quality.</p>
                     <p class="projects"><i class="fa fa-folder-open"></i>
-                        <a href="#tournesol-twitter-bot"> Tournesol Twitter Bot</a>
+                        <a href="#project-section"> Tournesol Twitter Bot</a>
                     </p>
                     <p class="projects"><i class="fa fa-folder-open"></i>
-                        <a href="#tournesol-analitics"> Tournesol analytics</a>
+                        <a href="#project-section"> Tournesol analytics</a>
                     </p>
                 </div>
             </div>
@@ -423,48 +423,133 @@
 
         </section>
 
-        <section id="projects-section">
-            <h2>Projets</h2>
+        <section id="project-section">
+            <h2>Project</h2>
 
-            <h3 id="ceasiompy">CEASIOMpy</h3>
-            <p class="project-description">
-                <a href="https://github.com/cfsengineering/CEASIOMpy" target="_blank">CEASIOMpy</a> is a Python
-                conceptual aircraft
-                design environment
-            </p>
-
-            <div class="project-illustration">
-                <a href="https://github.com/cfsengineering/CEASIOMpy"><img src="images/CEASIOMpy_main_logo.png"
-                        alt="CEASIOMpy logo"></a>
+            <div class="project-core">
+                <input id="project1" type=checkbox>
+                <label for="project1">
+                    <h3>CEASIOMpy</h3>
+                </label>
+                <span id="project1-detail">
+                    <div class="project-description">
+                        <p><b>Description:</b> <a href="https://github.com/cfsengineering/CEASIOMpy"
+                                target="_blank">CEASIOMpy</a> is a Python
+                            conceptual aircraft
+                            design environment</p>
+                    </div>
+                    <div class="project-link">
+                        <p><b>Link:</b> <a href="https://github.com/cfsengineering/CEASIOMpy" target="_blank">Github
+                                repository</a>
+                        </p>
+                    </div>
+                    <div class="project-technologies">
+                        <p><b>Technology used:</b></p>
+                        <div class="project-technologies-img">
+                            <img src="logos/logo_python.png" alt="Python">
+                            <img src="logos/logo_su2.jpg" alt="SU2">
+                            <img src="logos/logo_paraview.png" alt="Paraview">
+                            <img src="logos/logo_xml.png" alt="XML">
+                            <img src="logos/logo_git.png" alt="Git">
+                        </div>
+                    </div>
+                    <div class="project-illustration">
+                        <a href="https://github.com/cfsengineering/CEASIOMpy"><img src="images/CEASIOMpy_main_logo.png"
+                                alt="CEASIOMpy logo"></a>
+                    </div>
+                </span>
             </div>
 
-            <h3 id="tournesol-twitter-bot">Tournesol Twitter Bot</h3>
-            <p class="project-description">Twitter bot developed to automatically share recommendations from top videos
-                of
-                <a href="https://tournesol.app" target="_blank">tournesol.app</a>
-            </p>
-            <div class="project-illustration">
-                <a href="https://twitter.com/TournesolBot/status/1565007283028885506"><img
-                        src="images/tournesol_bot_example.png" alt="tournesol_bot_example"></a>
+            <div class="project-core">
+                <input id="project2" type=checkbox>
+                <label for="project2">
+                    <h3>Tournesol Twitter Bot</h3>
+                </label>
+                <span id="project2-detail">
+                    <div class="project-description">
+                        <p><b>Description:</b> Twitter bot developed to automatically share recommendations from top
+                            videos of <a href="https://tournesol.app" target="_blank">tournesol.app</a>
+                        </p>
+                    </div>
+                    <div class="project-link">
+                        <p><b>Link:</b> <a
+                                href="https://github.com/tournesol-app/tournesol/tree/main/backend/twitterbot"
+                                target="_blank">Github repository</a>
+                        </p>
+                    </div>
+                    <div class="project-technologies">
+                        <p><b>Technology used:</b></p>
+                        <div class="project-technologies-img">
+                            <img src="logos/logo_python.png" alt="Python">
+                            <img src="logos/logo_git.png" alt="Git">
+                        </div>
+                    </div>
+                    <div class="project-illustration">
+                        <a href="https://twitter.com/TournesolBot/status/1565007283028885506"><img
+                                src="images/tournesol_bot_example.png" alt="tournesol_bot_example"></a>
+                    </div>
+                </span>
             </div>
 
-            <h3 id="tournesol-analitics">Tournesol analytics</h3>
-            <p class="project-description"><a href="https://streamlit.io/" target="_blank">Streamlit app</a> to analyze
-                data from
-                <a href="https://tournesol.app" target="_blank">tournesol.app</a>
-            </p>
-            <div class="project-illustration">
-                <a href="https://github.com/tournesol-app/tournesol/tree/main/analytics"><img
-                        src="images/tournesol_analytics_correl.png" alt="tournesol_analytics_example"></a>
+            <div class="project-core">
+                <input id="project3" type=checkbox>
+                <label for="project3">
+                    <h3>Tournesol analytics</h3>
+                </label>
+                <span id="project3-detail">
+                    <div class="project-description">
+                        <p><b>Description:</b> <a href="https://streamlit.io/" target="_blank">Streamlit app</a> to
+                            analyze
+                            data from <a href="https://tournesol.app" target="_blank">tournesol.app</a>
+                        </p>
+                    </div>
+                    <div class="project-link">
+                        <p><b>Link:</b> <a href="https://github.com/tournesol-app/tournesol/tree/main/analytics"
+                                target="_blank">Github repository</a>
+                        </p>
+                    </div>
+                    <div class="project-technologies">
+                        <p><b>Technology used:</b></p>
+                        <div class="project-technologies-img">
+                            <img src="logos/logo_python.png" alt="Python">
+                            <img src="logos/logo_git.png" alt="Git">
+                        </div>
+                    </div>
+                    <div class="project-illustration">
+                        <a href="https://github.com/tournesol-app/tournesol/tree/main/analytics"><img
+                                src="images/tournesol_analytics_correl.png" alt="tournesol_analytics_example"></a>
+                    </div>
+                </span>
             </div>
 
-            <h3 id="tournesol-analitics">Snake of Life</h3>
-            <p class="project-description">Small game combining famous Snake and Conway's Game of Life
-                (<a href="https://github.com/aidanjungo/SnakeOfLife" target="_blank">Github repository</a>)
-            </p>
-            <div class="project-illustration">
-                <a href="https://github.com/aidanjungo/SnakeOfLife"><img src="images/snake_of_life.gif"
-                        alt="tournesol_bot_example"></a>
+            <div class="project-core">
+                <input id="project4" type=checkbox>
+                <label for="project4">
+                    <h3>Snake of Life</h3>
+                </label>
+                <span id="project4-detail">
+
+                    <div class="project-description">
+                        <p><b>Description:</b> Small game combining famous Snake and Conway's Game of Life
+                            (<a href="https://github.com/aidanjungo/SnakeOfLife" target="_blank">Github repository</a>)
+                        </p>
+                    </div>
+                    <div class="project-link">
+                        <p><b>Link:</b> <a href="https://github.com/aidanjungo/SnakeOfLife" target="_blank">Github
+                                repository</a>
+                        </p>
+                    </div>
+                    <div class="project-technologies">
+                        <p><b>Technology used:</b></p>
+                        <div class="project-technologies-img">
+                            <img src="logos/logo_python.png" alt="Python">
+                        </div>
+                    </div>
+                    <div class="project-illustration">
+                        <a href="https://github.com/aidanjungo/SnakeOfLife"><img src="images/snake_of_life.gif"
+                                alt="tournesol_bot_example"></a>
+                    </div>
+                </span>
             </div>
 
         </section>
