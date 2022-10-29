@@ -337,19 +337,41 @@ p>a:hover {
 
 /* Projects */
 
-.project-description {
-    margin-left: 25px;
+.project-core {
+    margin-left: 30px;
+    margin-right: 30px;
 }
 
 .project-illustration {
     margin-top: 15px;
     margin-bottom: 15px;
     text-align: center;
-
 }
 
+.project-technologies {
+    margin-bottom: 10px;
+}
+
+.project-description {
+    margin-bottom: 10px;
+}
+
+.project-link {
+    margin-bottom: 10px;
+}
+
+.project-technologies-img {
+    margin-top: 10px;
+    margin-left: 20px;
+}
+
+.project-technologies-img>img {
+    width: 40px;
+}
+
+
 .project-illustration img {
-    width: 50%;
+    width: 30%;
     border-radius: 6%;
     transition: 0.7s ease;
 }
@@ -358,6 +380,29 @@ p>a:hover {
     border-radius: 6%;
     box-shadow: 0 0 3px 3px #888888;
     transition: 0.7s ease;
+}
+
+
+#project1,
+#project1-detail,
+#project2,
+#project2-detail,
+#project3,
+#project3-detail,
+#project4,
+#project4-detail,
+#project5,
+#project5-detail {
+    display: none;
+}
+
+
+#project1:checked~#project1-detail,
+#project2:checked~#project2-detail,
+#project3:checked~#project3-detail,
+#project4:checked~#project4-detail,
+#project5:checked~#project5-detail {
+    display: block;
 }
 
 
